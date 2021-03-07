@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.notesapp.notes">
+
+    <application
+        android:name="com.notesapp.notes.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon_normal"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.notesapp.notes.NotificationActivity"
+            android:taskAffinity=""
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.notesapp.notes.SignUpActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name="com.notesapp.notes.LogInActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.notesapp.notes.EditNoteActivity" />
+        <activity
+            android:name="com.notesapp.notes.LoggedInActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.notesapp.notes.AddNoteActivity" />
+        <activity
+            android:name="com.notesapp.notes.SplashScreen"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
